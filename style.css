@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    padding-left: calc(50% - 555px);
+    padding-right: calc(50% - 555px);
+}
+
+/* шапка */
+.top {
+    height: 782px;
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.top__inner {
+    background: linear-gradient(90deg, rgba(213, 32, 71, 0.80) 0%, rgba(238, 61, 27, 0.80) 100%);
+    height: 782px;
+}
+
+.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 172px;
+}
+
+.header__inner {
+    /* margin-top: 61px; */
+}
+
+.header__link {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+
+.header__link:first-child {
+    font-weight: 700;
+}
+
+/* шапка */
+/* секция top__content */
+.top__content {
+    text-align: center;
+}
+
+.title {
+    color: #FFF;
+    text-align: center;
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    margin: 140px 0 39px 0;
+}
+
+.top__text {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 150%;
+    margin-bottom: 39px;
+}
+
+.top__btn {
+    color: #ED4C5C;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 160px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: #FFF;
+    border: none;
+}
+
+/* секция top */
+/* секция lorem */
+.lorem {
+    display: flex;
+    align-items: center;
+    margin: 95px 0;
+}
+
+.lorem__inner {
+    margin-right: 125px;
+}
+
+.heading {
+    color: #000;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.lorem__heading {
+    margin-bottom: 24px;
+}
+
+.lorem__text {
+    color: #000;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 14px;
+}
+
+.lorem__link {
+    color: #ED4C5C;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+/* секция lorem */
+/* секция features */
+.features {
+    background: #FAFAFA;
+    padding: 63px 0 31px 0;
+
+}
+
+.features__heading {
+    margin-bottom: 63px;
+    text-align: center;
+    margin-top: 63px;
+}
+
+.features-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.features-item {
+    background: #FFF;
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.10);
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features__img {
+    width: 100%;
+}
+
+.features__subtitle {
+    margin: 33px 0 20px 0;
+    color: #101010;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.features__text {
+    margin-bottom: 5px;
+    color: #101010;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.features__link {
+    color: #ED4C5C;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 25px;
+}
+
+/* секция features */
+/* секция stay */
+.stay {
+    background: #ED4C5C;
+    display: flex;
+    align-items: center;
+}
+.stay__wrap{
+    margin-right: 125px;
+}
+.stay__heading {
+    margin-bottom: 45px;
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.stay__text {
+    color: #FFF;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.stay__img {
+    width: 445px;
+    height: 311px;
+    border-radius: 15px;
+    margin: 95px 0 ;
+
+}
+
+/* секция stay */
+/* секция contacts */
+.contacts {
+display: flex;
+padding-top: 117px;
+padding-bottom: 78px;
+justify-content: space-between;
+}
+
+.contacts__heading {
+    margin-bottom: 53px;
+}
+
+.contacts__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.form__wrap{
+    display: flex;
+    gap: 30px;
+}
+.form__input {
+
+    padding: 0 31px;
+    color: rgba(19, 39, 67, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 1px solid var(--gray-1, #333);
+}
+
+.form__input::placeholder {
+    color: rgba(19, 39, 67, 0.50);
+}
+
+.contacts__name {
+    width: 255px;
+    height: 60px;
+}
+
+.contacts__data {
+    width: 540px;
+    height: 60px;
+
+}
+.contacts__text{
+    color: #000;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 14px;
+}
+.contacts__select{
+    appearance: none;
+    background-image: url(img/strel.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 23px);
+}
+.form__submit {
+    width: 160px;
+    height: 50px;
+    border-radius: 6px;
+    border: 1.5px solid #ED4C5C;
+    background: #ED4C5C;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    align-self: start;
+}
+
+/* футер */
+.footer {
+    height: 110px;
+    background: #FAFAFA;
+    margin-top: 78px;
+
+}
+
+.footer__text {
+    color: #101010;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 48px 0;
+}
+
+/* футер */
